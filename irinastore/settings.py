@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'bandymai',
     'store',
     'tags',
+    'likes',
     'debug_toolbar',
 ]
 
