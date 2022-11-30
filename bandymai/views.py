@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def pagrindinis(request):
-    return HttpResponse('Bandymu triusis')
+    return render(request, 'triusis.html')
