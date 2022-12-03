@@ -25,7 +25,9 @@ admin.site.index_title = 'Administracija'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bandymai/', include('bandymai.urls')),
-    path('__debug__', include(debug_toolbar.urls)),
     path('store/', include('store.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
+    path('__debug__', include(debug_toolbar.urls)),
     
 ]
