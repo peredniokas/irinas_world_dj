@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'tags',
     'likes',
     'debug_toolbar',
-    'store_custom',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -90,8 +90,11 @@ WSGI_APPLICATION = 'irinastore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'irinastore2',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'lopaslopas'
     }
 }
 
@@ -139,3 +142,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'COERCE_DECIMAL_TO_STRING': False
 }
+AUTH_USER_MODEL = 'core.User'
