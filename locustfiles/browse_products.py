@@ -28,6 +28,8 @@ class WebsiteUser(HttpUser):
       json={'product_id': product_id, 'quantity': 1}
     )
 
+  
+
   def on_start(self):
     response = self.client.post('/store/carts/')
     result = response.json()

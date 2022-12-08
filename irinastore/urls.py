@@ -25,6 +25,7 @@ admin.site.index_title = 'Administracija'
 
 
 urlpatterns = [
+    path('', include('core.urls')),
     path('admin/', admin.site.urls),
     path('bandymai/', include('bandymai.urls')),
     path('store/', include('store.urls')),
@@ -36,3 +37,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += [path('silk/', include('silk.urls', namespace='silk'))]

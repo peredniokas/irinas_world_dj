@@ -12,9 +12,11 @@ djoser = "*"
 djangorestframework-simplejwt = "*"
 pillow = "*"
 django-templated-mail = "*"
+django-redis = "*"
 
 [dev-packages]
 locust = "*"
+django-silk = "*"
 
 [requires]
 python_version = "3.10"
