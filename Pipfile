@@ -13,6 +13,7 @@ djangorestframework-simplejwt = "*"
 pillow = "*"
 django-templated-mail = "*"
 django-redis = "*"
+whitenoise = "*"
 
 [dev-packages]
 locust = "*"
